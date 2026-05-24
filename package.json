@@ -1,0 +1,52 @@
+{
+  "name": "flowforge",
+  "version": "1.0.0",
+  "description": "A lightweight CLI tool for defining, executing, and managing development workflows",
+  "main": "dist/index.js",
+  "bin": {
+    "flowforge": "dist/cli.js",
+    "ff": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts"
+  },
+  "keywords": [
+    "cli",
+    "workflow",
+    "automation",
+    "task-runner",
+    "developer-tools",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "date-fns": "^4.1.0",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.0",
+    "inquirer": "^8.2.6",
+    "js-yaml": "^4.1.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.15.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
